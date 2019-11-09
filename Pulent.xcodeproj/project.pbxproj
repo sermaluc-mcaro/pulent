@@ -9,13 +9,14 @@
 /* Begin PBXBuildFile section */
 		24F2BCF82376355000C4A784 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F2BCF72376355000C4A784 /* AppDelegate.swift */; };
 		24F2BCFA2376355000C4A784 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F2BCF92376355000C4A784 /* SceneDelegate.swift */; };
-		24F2BCFC2376355000C4A784 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F2BCFB2376355000C4A784 /* ViewController.swift */; };
 		24F2BCFF2376355000C4A784 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24F2BCFD2376355000C4A784 /* Main.storyboard */; };
 		24F2BD022376355000C4A784 /* Pulent.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 24F2BD002376355000C4A784 /* Pulent.xcdatamodeld */; };
 		24F2BD042376355400C4A784 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24F2BD032376355400C4A784 /* Assets.xcassets */; };
 		24F2BD072376355400C4A784 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24F2BD052376355400C4A784 /* LaunchScreen.storyboard */; };
 		24F2BD122376355400C4A784 /* PulentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F2BD112376355400C4A784 /* PulentTests.swift */; };
 		24F2BD1D2376355400C4A784 /* PulentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F2BD1C2376355400C4A784 /* PulentUITests.swift */; };
+		24F2BD2B23763E7A00C4A784 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F2BD2A23763E7A00C4A784 /* HomeVC.swift */; };
+		24F2BD2D23763F4900C4A784 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F2BD2C23763F4900C4A784 /* NetworkService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +40,6 @@
 		24F2BCF42376355000C4A784 /* Pulent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pulent.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24F2BCF72376355000C4A784 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		24F2BCF92376355000C4A784 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		24F2BCFB2376355000C4A784 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		24F2BCFE2376355000C4A784 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		24F2BD012376355000C4A784 /* Pulent.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Pulent.xcdatamodel; sourceTree = "<group>"; };
 		24F2BD032376355400C4A784 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,6 +51,8 @@
 		24F2BD182376355400C4A784 /* PulentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PulentUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		24F2BD1C2376355400C4A784 /* PulentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PulentUITests.swift; sourceTree = "<group>"; };
 		24F2BD1E2376355400C4A784 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		24F2BD2A23763E7A00C4A784 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		24F2BD2C23763F4900C4A784 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,8 +105,9 @@
 			children = (
 				24F2BCF72376355000C4A784 /* AppDelegate.swift */,
 				24F2BCF92376355000C4A784 /* SceneDelegate.swift */,
-				24F2BCFB2376355000C4A784 /* ViewController.swift */,
 				24F2BCFD2376355000C4A784 /* Main.storyboard */,
+				24F2BD2A23763E7A00C4A784 /* HomeVC.swift */,
+				24F2BD2C23763F4900C4A784 /* NetworkService.swift */,
 				24F2BD032376355400C4A784 /* Assets.xcassets */,
 				24F2BD052376355400C4A784 /* LaunchScreen.storyboard */,
 				24F2BD082376355400C4A784 /* Info.plist */,
@@ -262,8 +265,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				24F2BCFC2376355000C4A784 /* ViewController.swift in Sources */,
+				24F2BD2D23763F4900C4A784 /* NetworkService.swift in Sources */,
 				24F2BCF82376355000C4A784 /* AppDelegate.swift in Sources */,
+				24F2BD2B23763E7A00C4A784 /* HomeVC.swift in Sources */,
 				24F2BCFA2376355000C4A784 /* SceneDelegate.swift in Sources */,
 				24F2BD022376355000C4A784 /* Pulent.xcdatamodeld in Sources */,
 			);
